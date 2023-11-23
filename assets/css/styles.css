@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  width: 100%;
+  background-color: #8AEF9F;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+}
+
+.imagem {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.imagem img {
+  width: 31rem;
+}
+
+.formulario {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #04B486;
+  padding: 3rem;
+  border-radius: 10px;
+
+}
+
+.titulo h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #DCDCDC;
+  margin: 0 auto;
+}
+
+.titulo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculadora {
+  text-align: center;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+.input-form {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px;
+}
+
+
+.button-calc {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #8AEF9F;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+.button-calc:hover {
+  background-color: #CEF6D8;
+}
+
+.button-calc {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #04B486;
+  padding: 40px;
+  border-radius: 80px;
+  margin-top: 2%;
+
+}
+
+@media (max-width: 600px) {
+  .calculadora {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .imagem {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .formulario {
+    width: 100%;
+    height: auto;
+
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .input-form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
